@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registe</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- font awesome css file  -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="position-relative register">
+    <!-- settings -->
+    <div
+      class="settings slow-transition position-fixed left-0 border-3 rounded-3 p-2"
+    >
+      <span class="icon main-bg py-1 px-2 position-absolute start-100">
+        <i class="fa-solid fa-gear text-white"></i>
+      </span>
+      <h5 class="text-center">colors</h5>
+      <div
+        class="colors d-flex justify-content-center align-items-center gap-3"
+      >
+        <div class="orange rounded-circle" data-color="#ff8a00"></div>
+        <div class="blue rounded-circle" data-color="#3082eb"></div>
+      </div>
+      <h5 class="text-center mt-3">Fonts</h5>
+      <div class="fonts">
+        <div class="rounded-pill text-center py-1 roboto">Roboto</div>
+        <div class="rounded-pill text-center py-1 my-2 open-sans">
+          Open sans
+        </div>
+        <div class="rounded-pill text-center py-1 rubik">Rubik</div>
+      </div>
+    </div>
+    <!-- /settings -->
+
+    <!-- header -->
+    <div class="header">
+      <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img src="assets/images/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <div class="menu d-flex flex-column h-100 justify-content-evenly">
+                <span
+                  class="w-50 align-self-start main-bg fast-transition"
+                ></span>
+                <span class="w-100 main-bg fast-transition"></span>
+                <span
+                  class="w-50 align-self-end main-bg fast-transition"
+                ></span>
+              </div>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item py-2 px-3">
+                <a class="nav-link p-0 text-black" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item py-2 px-3">
+                <a class="nav-link p-0 text-black" href="#">About Us</a>
+              </li>
+              <li class="nav-item py-2 px-3">
+                <a class="nav-link p-0 text-black" href="#">Courses</a>
+              </li>
+              <li class="nav-item py-2 px-3">
+                <a class="nav-link p-0 text-black" href="#">News</a>
+              </li>
+              <li class="nav-item py-2 px-3">
+                <a class="nav-link p-0 text-black" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- /header -->
+
+    <!-- register form -->
+    <img
+      src="assets/images/Welcome.png"
+      alt="welcome png"
+      width="300"
+      class="position-relative start-50 translate-middle-x"
+    />
+    <div class="register-form mb-5 mt-3">
+      <div class="container">
+        <form
+          action=""
+          class="p-3 rounded-3 position-relative start-50 translate-middle-x"
+          style="max-width: 500px; min-width: 300px"
+        >
+          <h1 class="text-center main-color fw-bold mb-5">Log In</h1>
+          <div class="name d-flex justify-content-between">
+            <div class="first-name position-relative">
+              <input
+                required
+                class="form-control"
+                type="text"
+                id="first-name"
+              />
+              <label
+                class="position-absoulte fast-transition z-3"
+                for="#first-name"
+                class="d-block"
+              >
+                First Name
+              </label>
+            </div>
+            <div class="last-name position-relative">
+              <input required class="form-control" type="text" id="last-name" />
+              <label
+                class="position-absoulte fast-transition z-3"
+                for="#last-name"
+                class="d-block"
+              >
+                Last Name
+              </label>
+            </div>
+          </div>
+
+          <div class="phone mt-1 position-relative">
+            <input required class="form-control" type="tel" id="phone" /><label
+              class="position-absoulte fast-transition z-3"
+              for="#phone"
+              class="d-block"
+            >
+              Phone
+            </label>
+            <div
+              class="error-massage-phone text-danger mt-1 ms-2 position-relative"
+              style="display: none"
+            >
+              The phone must follow this : +xx xxx xxxx
+            </div>
+          </div>
+          <div class="email mt-1 position-relative">
+            <input
+              required
+              class="form-control"
+              type="email"
+              id="email"
+            /><label
+              class="position-absoulte fast-transition z-3"
+              for="#email"
+              class="d-block"
+            >
+              Email
+            </label>
+          </div>
+          <div class="pass position-relative mt-1">
+            <input
+              required
+              class="form-control"
+              type="password"
+              id="pass"
+              minlength="8"
+              maxlength="22"
+              class="d-block"
+            /><label
+              class="position-absoulte fast-transition z-3"
+              for="#pass"
+              class="d-block"
+            >
+              Password
+            </label>
+            <!-- eye icon -->
+            <img
+              src="assets/images/close-eye.png"
+              class="eye-icon position-absolute z-3"
+              width="25"
+              height="25"
+              id="passEyeIcon"
+            />
+            <!-- /eye icon -->
+          </div>
+          <div class="confirm-pass position-relative mt-1">
+            <input
+              required
+              class="form-control"
+              type="password"
+              id="confirm-pass"
+              minlength="8"
+              maxlength="22"
+            /><label
+              class="position-absoulte fast-transition z-3"
+              for="#confirm-pass"
+              class="d-block"
+            >
+              Confirm Password
+            </label>
+            <div
+              class="error-confirm-massage text-danger mt-1 ms-2 position-relative"
+              style="display: none"
+            >
+              the confirm pass is not same the password
+            </div>
+            <!-- eye icon -->
+            <img
+              src="assets/images/close-eye.png"
+              class="eye-icon position-absolute z-3"
+              width="25"
+              height="25"
+              id="confirmEyeIcon"
+            />
+            <!-- /eye icon -->
+          </div>
+          <div class="validation mb-3">
+            <div
+              class="valid-one fast-transition d-flex align-items-center gap-1"
+              id="validOne"
+              style="color: #777; text-decoration: line-through"
+            >
+              <img
+                src="assets/images/uncorrect.png"
+                width="10"
+                id="validStateOne"
+              />
+              <span>Write Capital and Small Character</span>
+            </div>
+            <div
+              class="valid-one my-1 fast-transition fast-transition d-flex align-items-center gap-1"
+              id="validTwo"
+              style="color: #777; text-decoration: line-through"
+            >
+              <img
+                src="assets/images/uncorrect.png"
+                width="10"
+                id="validStateTwo"
+              />
+              Write One or More Special Character
+            </div>
+            <div
+              class="valid-one fast-transition fast-transition d-flex align-items-center gap-1"
+              id="validThree"
+              style="color: #777; text-decoration: line-through"
+            >
+              <img
+                src="assets/images/uncorrect.png"
+                width="10"
+                id="validStateThree"
+              />
+              Write One or More Number
+            </div>
+          </div>
+          <input
+            required
+            type="submit"
+            value="Log In"
+            class="btn w-100 main-bg text-white rounded-pill border-1"
+          />
+        </form>
+      </div>
+    </div>
+
+    <!-- /register form -->
+
+    <!-- footer -->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row row-gap-5">
+          <div class="col-lg-3 col-md-6 text-center text-lg-start">
+            <img src="assets/images/logo.png" width="100" />
+            <p class="my-4 text-white-50 paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              natus saepe similique soluta quae a consectetur neque quibusdam
+              alias ducimus!
+            </p>
+            <div
+              class="socila-links px-4 py-2 bg-white rounded-pill text-center position-relative"
+            >
+              Social links
+            </div>
+            <div
+              class="icons ms-3 mt-4 d-flex gap-3 align-items-center position-relative"
+            >
+              <div
+                class="d-flex justify-content-center align-items-center rounded-circle position-relative fast-transition facebook bg-white"
+              >
+                <a href="" class="main-color"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </div>
+              <div
+                class="d-flex justify-content-center align-items-center rounded-circle position-relative fast-transition twitter bg-white m-0"
+              >
+                <a href="" class="main-color"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+              <div
+                class="d-flex justify-content-center align-items-center rounded-circle position-relative fast-transition youtube bg-white"
+              >
+                <a href="" class="main-color"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+              </div>
+              <div
+                class="d-flex justify-content-center align-items-center rounded-circle position-relative fast-transition linkedin bg-white"
+              >
+                <a href="" class="main-color"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center text-lg-start">
+            <h2 class="text-white mb-4 fw-bold">Quick Links</h2>
+            <div class="links ps-2 d-flex flex-column gap-3 mt-3">
+              <a
+                href=""
+                class="text-white-50 text-decoration-none slow-transition"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="ms-1">Home</span>
+              </a>
+              <a
+                href=""
+                class="text-white-50 text-decoration-none slow-transition"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="ms-1">About Us</span>
+              </a>
+              <a
+                href=""
+                class="text-white-50 text-decoration-none slow-transition"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="ms-1">Services</span>
+              </a>
+              <a
+                href=""
+                class="text-white-50 text-decoration-none slow-transition"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="ms-1">Contact</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center text-lg-start">
+            <h2 class="text-white mb-4 fw-bold">Useful Links</h2>
+            <div class="links ps-2 d-flex flex-column gap-3 mt-3">
+              <a
+                href=""
+                class="text-white-50 text-decoration-none slow-transition"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="ms-1">Courses</span>
+              </a>
+              <a
+                href=""
+                class="text-white-50 text-decoration-none slow-transition"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="ms-1">Events</span>
+              </a>
+              <a
+                href=""
+                class="text-white-50 text-decoration-none slow-transition"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="ms-1">News</span>
+              </a>
+              <a
+                href=""
+                class="text-white-50 text-decoration-none slow-transition"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="ms-1">Teacheres</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center text-lg-start">
+            <h2 class="fw-bold text-white mb-4">Contact Us</h2>
+            <div class="address ms-2">
+              <h6 class="main-color">Address :</h6>
+              <p class="text-white-50 fw-light">
+                1254 Creekeside tekans elazert
+              </p>
+            </div>
+            <div class="phone ms-2">
+              <h6 class="main-color">Phone :</h6>
+              <p class="text-white-50 fw-light">+1 (156) 2145 566</p>
+            </div>
+            <div class="email ms-2">
+              <h6 class="main-color">Email :</h6>
+              <p class="text-white-50 fw-light">info@on.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- bootstrap js file -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome js file  -->
+    <script src="assets/js/all.min.js"></script>
+    <!-- main js file -->
+    <script src="assets/js/register.js"></script>
+  </body>
+</html>
